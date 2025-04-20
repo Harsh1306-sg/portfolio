@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { projects } from "@/data/projects";
@@ -10,13 +9,13 @@ const ProjectDetail = () => {
   const navigate = useNavigate();
   const [project, setProject] = useState<ProjectType | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  
+
   useEffect(() => {
     setIsLoading(true);
-    
+
     // Find the project by ID
     const foundProject = projects.find((p) => p.id === id);
-    
+
     if (foundProject) {
       setProject(foundProject);
     } else {
@@ -25,15 +24,15 @@ const ProjectDetail = () => {
         navigate("/projects", { replace: true });
       }, 100);
     }
-    
+
     // Simulate loading for smooth transitions
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 300);
-    
+
     return () => clearTimeout(timer);
   }, [id, navigate]);
-  
+
   if (isLoading) {
     return (
       <div className="pt-24 md:pt-32 pb-20 px-6">
@@ -41,9 +40,9 @@ const ProjectDetail = () => {
           <div className="animate-pulse">
             <div className="h-10 bg-light-300 rounded w-1/3 mb-4"></div>
             <div className="h-4 bg-light-300 rounded w-2/3 mb-12"></div>
-            
+
             <div className="aspect-video w-full bg-light-300 rounded-lg mb-8"></div>
-            
+
             <div className="h-6 bg-light-300 rounded w-full mb-4"></div>
             <div className="h-6 bg-light-300 rounded w-full mb-4"></div>
             <div className="h-6 bg-light-300 rounded w-3/4"></div>
@@ -52,16 +51,19 @@ const ProjectDetail = () => {
       </div>
     );
   }
-  
+
   if (!project) {
     return null;
   }
-  
+
   return (
     <div className="pt-24 md:pt-32 pb-20 px-6">
       <div className="container mx-auto">
         <div className="mb-8">
-          <Link to="/projects" className="text-dark-100/70 hover:text-ntu inline-flex items-center">
+          <Link
+            to="/projects"
+            className="text-dark-100/70 hover:text-ntu inline-flex items-center"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -79,11 +81,13 @@ const ProjectDetail = () => {
             Back to Projects
           </Link>
         </div>
-        
+
         <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-dark-100">{project.title}</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-dark-100">
+            {project.title}
+          </h1>
           <p className="mt-4 text-xl text-dark-100/70">{project.description}</p>
-          
+
           <div className="mt-6 flex flex-wrap gap-2">
             {project.tools.map((tool, index) => (
               <span
@@ -95,7 +99,7 @@ const ProjectDetail = () => {
             ))}
           </div>
         </div>
-        
+
         <div className="mb-12">
           <div className="aspect-video w-full rounded-lg overflow-hidden bg-light-300">
             <img
@@ -105,65 +109,72 @@ const ProjectDetail = () => {
             />
           </div>
         </div>
-        
+
         {/* Project details - this would be populated with actual project data */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
-            <h2 className="text-2xl font-bold text-dark-100 mb-4">Project Overview</h2>
-            <p className="text-dark-100/80 mb-6">
-              This project involved the design, analysis, and implementation of advanced engineering concepts to solve a specific problem in the field. Throughout the development process, various tools and techniques were employed to ensure optimal results.
-            </p>
-            
-            <p className="text-dark-100/80 mb-6">
-              The design phase required careful consideration of multiple factors including material properties, environmental conditions, and performance requirements. Advanced CAD software was utilized to create detailed 3D models before conducting simulation testing.
-            </p>
-            
-            <h3 className="text-xl font-bold text-dark-100 mt-10 mb-4">Key Features</h3>
+            <h2 className="text-2xl font-bold text-dark-100 mb-4">
+              Project Overview
+            </h2>
+            <p className="text-dark-100/80 mb-6">{project.para1}</p>
+
+            <p className="text-dark-100/80 mb-6">{project.para2}</p>
+
+            <h3 className="text-xl font-bold text-dark-100 mt-10 mb-4">
+              Key Features
+            </h3>
             <ul className="list-disc list-inside space-y-2 text-dark-100/80">
-              <li>Custom-engineered components optimized for performance</li>
-              <li>Advanced material selection for durability and sustainability</li>
-              <li>Integrated sensor systems for real-time monitoring</li>
-              <li>Optimized thermal management solution</li>
-              <li>Energy-efficient operation with minimal environmental impact</li>
+              <li>{project.keyFeatures[0]}</li>
+              <li>{project.keyFeatures[1]}</li>
+              <li>{project.keyFeatures[2]}</li>
+              <li>{project.keyFeatures[3]}</li>
             </ul>
-            
-            <h3 className="text-xl font-bold text-dark-100 mt-10 mb-4">Technical Challenges</h3>
+
+            <h3 className="text-xl font-bold text-dark-100 mt-10 mb-4">
+              Technical Challenges
+            </h3>
             <p className="text-dark-100/80 mb-6">
-              Several technical challenges were encountered during this project. One major obstacle was balancing performance requirements with size and weight constraints. This required innovative approaches to component design and material selection.
-            </p>
-            
-            <p className="text-dark-100/80 mb-6">
-              Another significant challenge was optimizing the thermal management system to maintain optimal operating temperatures under various conditions. Extensive CFD analysis and physical testing were conducted to validate the final design.
+              {project.technicalChallenges}
             </p>
           </div>
-          
+
           <div className="lg:col-span-1">
             <div className="sticky top-32">
               <div className="bg-light-200 rounded-lg p-6">
-                <h3 className="text-lg font-bold text-dark-100 mb-4">Project Details</h3>
-                
+                <h3 className="text-lg font-bold text-dark-100 mb-4">
+                  Project Details
+                </h3>
+
                 <div className="space-y-4">
                   <div>
-                    <h4 className="text-sm font-medium text-dark-100/70">Category</h4>
+                    <h4 className="text-sm font-medium text-dark-100/70">
+                      Category
+                    </h4>
                     <p>{project.category.join(", ")}</p>
                   </div>
-                  
+
                   <div>
-                    <h4 className="text-sm font-medium text-dark-100/70">Tools Used</h4>
+                    <h4 className="text-sm font-medium text-dark-100/70">
+                      Tools Used
+                    </h4>
                     <p>{project.tools.join(", ")}</p>
                   </div>
-                  
+
                   <div>
-                    <h4 className="text-sm font-medium text-dark-100/70">Duration</h4>
-                    <p>3 months</p>
+                    <h4 className="text-sm font-medium text-dark-100/70">
+                      Duration
+                    </h4>
+                    <p>{project.duration} months</p>
                   </div>
-                  
+
                   <div>
-                    <h4 className="text-sm font-medium text-dark-100/70">Team Size</h4>
-                    <p>3 members</p>
+                    <h4 className="text-sm font-medium text-dark-100/70">
+                      Team Size
+                    </h4>
+                    <p>{project.teamSize} members</p>
                   </div>
                 </div>
-                
+
                 <div className="mt-8">
                   <Button className="w-full">
                     <svg

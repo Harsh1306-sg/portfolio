@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SectionHeader from "@/components/SectionHeader";
@@ -11,18 +10,18 @@ import { cn } from "@/lib/utils";
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
   const featuredProjects = projects.filter((project) => project.featured);
-  
+
   useEffect(() => {
     setIsVisible(true);
   }, []);
-  
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-6">
         <div className="container mx-auto">
           <div className="flex flex-col-reverse lg:flex-row items-center">
-            <div 
+            <div
               className={cn(
                 "w-full lg:w-1/2 mt-10 lg:mt-0 lg:pr-10",
                 "opacity-0 transition-all duration-1000 ease-out transform translate-y-8",
@@ -32,11 +31,12 @@ const Home = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-100 leading-tight">
                 Mechanical Engineer <span className="text-ntu">& Designer</span>
               </h1>
-              
+
               <p className="mt-6 text-xl text-dark-100/70">
-                Master's student at NTU Singapore specializing in robotics design and thermal systems engineering.
+                Master's student at NTU Singapore specializing in robotics
+                design and engineering fundamentals.
               </p>
-              
+
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link to="/projects">
                   <Button size="lg">View Projects</Button>
@@ -48,8 +48,8 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            
-            <div 
+
+            <div
               className={cn(
                 "w-full lg:w-1/2",
                 "opacity-0 transition-all duration-1000 delay-300 ease-out",
@@ -74,11 +74,11 @@ const Home = () => {
       {/* Featured Projects */}
       <section className="py-20 px-6 bg-light-200">
         <div className="container mx-auto">
-          <SectionHeader 
+          <SectionHeader
             title="Featured Projects"
             subtitle="Explore some of my recent work in mechanical engineering, robotics, and sustainable design."
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project, index) => (
               <ScrollAnimation key={project.id} delay={index * 150}>
@@ -86,7 +86,7 @@ const Home = () => {
               </ScrollAnimation>
             ))}
           </div>
-          
+
           <div className="mt-12 text-center">
             <Link to="/projects">
               <Button variant="secondary">View All Projects</Button>
@@ -94,7 +94,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Skills Section */}
       <section className="py-20 px-6">
         <div className="container mx-auto">
@@ -103,11 +103,12 @@ const Home = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-dark-100">
                 Technical <span className="text-ntu">Skills</span>
               </h2>
-              
+
               <p className="mt-4 text-dark-100/70">
-                Specialized in mechanical design, thermal systems, and robotics with experience in various engineering tools and software.
+                Specialized in mechanical design, thermal systems, and robotics
+                with experience in various engineering tools and software.
               </p>
-              
+
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
                 <div className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-ntu mr-3"></div>
@@ -115,7 +116,7 @@ const Home = () => {
                 </div>
                 <div className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-ntu mr-3"></div>
-                  <span>Thermal System Design</span>
+                  <span>Simulink & AutoCAD</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-ntu mr-3"></div>
@@ -143,23 +144,39 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="w-full md:w-1/2">
               <div className="grid grid-cols-2 gap-6">
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
-                  <img src="https://cdn.worldvectorlogo.com/logos/solidworks.svg" alt="SolidWorks" className="h-12" />
+                  <img
+                    src="https://cdn.worldvectorlogo.com/logos/solidworks.svg"
+                    alt="SolidWorks"
+                    className="h-12"
+                  />
                   <p className="mt-4 font-medium text-center">SolidWorks</p>
                 </div>
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB" className="h-12" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
+                    alt="MATLAB"
+                    className="h-12"
+                  />
                   <p className="mt-4 font-medium text-center">MATLAB</p>
                 </div>
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
-                  <img src="https://www.ansys.com/-/media/ansys/corporate/about-ansys/social-share-image.jpg" alt="ANSYS" className="h-12" />
-                  <p className="mt-4 font-medium text-center">ANSYS</p>
+                  <img
+                    src="https://logos-world.net/wp-content/uploads/2020/12/Autocad-Logo.png"
+                    alt="ANSYS"
+                    className="h-12"
+                  />
+                  <p className="mt-4 font-medium text-center">AutoCad</p>
                 </div>
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/1024px-Arduino_Logo.svg.png" alt="Arduino" className="h-12" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/1024px-Arduino_Logo.svg.png"
+                    alt="Arduino"
+                    className="h-12"
+                  />
                   <p className="mt-4 font-medium text-center">Arduino</p>
                 </div>
               </div>

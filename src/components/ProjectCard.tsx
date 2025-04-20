@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
@@ -10,6 +9,12 @@ export type ProjectType = {
   category: string[];
   tools: string[];
   featured?: boolean;
+  duration: number;
+  para1: string;
+  para2: string;
+  teamSize: number;
+  keyFeatures: string[];
+  technicalChallenges: string;
 };
 
 interface ProjectCardProps {
@@ -18,9 +23,13 @@ interface ProjectCardProps {
   featured?: boolean;
 }
 
-const ProjectCard = ({ project, className, featured = false }: ProjectCardProps) => {
+const ProjectCard = ({
+  project,
+  className,
+  featured = false,
+}: ProjectCardProps) => {
   return (
-    <Link 
+    <Link
       to={`/projects/${project.id}`}
       className={cn(
         "group block overflow-hidden rounded-lg border border-light-300 bg-white transition-all duration-300 hover:shadow-lg",
@@ -36,23 +45,23 @@ const ProjectCard = ({ project, className, featured = false }: ProjectCardProps)
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
-        
+
         {project.featured && (
           <div className="absolute right-4 top-4 rounded bg-ntu px-2 py-1 text-xs font-medium text-white">
             Featured
           </div>
         )}
       </div>
-      
+
       <div className="p-5">
         <h3 className="text-xl font-semibold text-dark-100 group-hover:text-ntu">
           {project.title}
         </h3>
-        
+
         <p className="mt-2 text-sm text-dark-100/70 line-clamp-2">
           {project.description}
         </p>
-        
+
         <div className="mt-4 flex flex-wrap gap-2">
           {project.tools.slice(0, 3).map((tool, index) => (
             <span
