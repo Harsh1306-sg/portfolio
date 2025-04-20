@@ -10,6 +10,10 @@ export default {
 	],
 	prefix: "",
 	theme: {
+		fontFamily: {
+			sans: ['Inter', 'sans-serif'],
+		},
+	theme: {
 		container: {
 			center: true,
 			padding: '2rem',
@@ -51,6 +55,18 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				ntu: '#ea384c',
+				dark: {
+					100: '#333333',
+					200: '#403E43',
+					300: '#222222',
+				},
+				light: {
+					100: '#FFFFFF',
+					200: '#F6F6F7',
+					300: '#F1F1F1',
+					400: '#EEEEEE',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
