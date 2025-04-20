@@ -50,7 +50,7 @@ const About = () => {
 
             <div className="space-y-4 mb-8">
               <div className="p-4 border-l-2 border-ntu">
-                <p className="text-sm text-ntu font-medium">2023 - Present</p>
+                <p className="text-sm text-ntu font-medium">2024 - Present</p>
                 <h5 className="text-lg font-medium">
                   Master of Science in Mechanical Engineering
                 </h5>
