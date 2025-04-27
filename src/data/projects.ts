@@ -1,4 +1,5 @@
 import { ProjectType } from "@/components/ProjectCard";
+import f1TenthGif from "../images/ftenth.gif";
 
 export const projects: ProjectType[] = [
   {
@@ -56,7 +57,7 @@ export const projects: ProjectType[] = [
     title: "F1Tenth Virtual Hackathon - 3rd Place",
     description:
       "Developed an award-winning autonomous racing algorithm utilizing wall-tracing techniques for precise navigation and obstacle avoidance, implemented within the ROS 2 framework for real-time control and sensor integration.",
-    image: "https://stevengong.co/attachments/Pasted-image-20230106181649.png",
+    image: f1TenthGif,
     category: ["Robotics", "Programming", "Autonomous Systems"],
     tools: ["ROS 2", "Python", "Wall-tracing Algorithm", "Sensor Integration"],
     featured: true,

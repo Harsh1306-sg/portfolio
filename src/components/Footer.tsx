@@ -12,7 +12,7 @@ const Footer = () => {
               <span className="text-ntu">H</span>Pandey
             </Link>
             <p className="mt-2 text-sm text-dark-100/70">
-              Mechanical Engineer from NTU Singapore
+              Mechanical Design Engineer from NTU Singapore
             </p>
           </div>
 

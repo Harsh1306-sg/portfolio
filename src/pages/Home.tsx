@@ -29,12 +29,15 @@ const Home = () => {
               )}
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-100 leading-tight">
-                Mechanical Engineer <span className="text-ntu">& Designer</span>
+                Mechanical Design <span className="text-ntu">Engineer</span>
               </h1>
 
               <p className="mt-6 text-xl text-dark-100/70">
-                Master's student at NTU Singapore specializing in robotics
-                design and engineering fundamentals.
+                Mechanical-Design Engineer and student at NTU Singapore with
+                expertise in CAD Design, FEA Simulations, Robotics, Automation,
+                and Autonomous systems. Skilled in Python, MATLAB, ROS 2, and
+                multiple CAD software’s, with experience from aerospace to
+                material engineering.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -105,7 +108,7 @@ const Home = () => {
               </h2>
 
               <p className="mt-4 text-dark-100/70">
-                Specialized in mechanical design, thermal systems, and robotics
+                Specialized in mechanical design, military designs and robotics
                 with experience in various engineering tools and software.
               </p>
 
@@ -149,8 +152,8 @@ const Home = () => {
               <div className="grid grid-cols-2 gap-6">
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
                   <img
-                    src="https://cdn.worldvectorlogo.com/logos/solidworks.svg"
-                    alt="SolidWorks"
+                    src="https://img.icons8.com/?size=512&id=62397&format=png"
+                    alt="SolidWorks Logo"
                     className="h-12"
                   />
                   <p className="mt-4 font-medium text-center">SolidWorks</p>
@@ -158,26 +161,26 @@ const Home = () => {
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
-                    alt="MATLAB"
+                    alt="MATLAB Logo"
                     className="h-12"
                   />
                   <p className="mt-4 font-medium text-center">MATLAB</p>
                 </div>
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
                   <img
-                    src="https://logos-world.net/wp-content/uploads/2020/12/Autocad-Logo.png"
-                    alt="ANSYS"
+                    src="https://avatars.githubusercontent.com/u/29735195?s=280&v=4"
+                    alt="ROS 2 Logo"
                     className="h-12"
                   />
-                  <p className="mt-4 font-medium text-center">AutoCad</p>
+                  <p className="mt-4 font-medium text-center">ROS 2</p>
                 </div>
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/1024px-Arduino_Logo.svg.png"
-                    alt="Arduino"
+                    src="https://brandlogos.net/wp-content/uploads/2022/05/ansys-logo_brandlogos.net_snebi.png"
+                    alt="Ansys Logo"
                     className="h-12"
                   />
-                  <p className="mt-4 font-medium text-center">Arduino</p>
+                  <p className="mt-4 font-medium text-center">Ansys</p>
                 </div>
               </div>
             </div>
