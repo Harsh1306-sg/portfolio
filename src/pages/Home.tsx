@@ -152,7 +152,7 @@ const Home = () => {
               <div className="grid grid-cols-2 gap-6">
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
                   <img
-                    src="https://img.icons8.com/?size=512&id=62397&format=png"
+                    src="https://www.pugetsystems.com/wp-content/uploads/2022/08/SOLIDWORKS-Logo.png"
                     alt="SolidWorks Logo"
                     className="h-12"
                   />
@@ -160,11 +160,11 @@ const Home = () => {
                 </div>
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/701px-Python-logo-notext.svg.png"
                     alt="MATLAB Logo"
                     className="h-12"
                   />
-                  <p className="mt-4 font-medium text-center">MATLAB</p>
+                  <p className="mt-4 font-medium text-center">Python</p>
                 </div>
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
                   <img
@@ -176,7 +176,7 @@ const Home = () => {
                 </div>
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
                   <img
-                    src="https://brandlogos.net/wp-content/uploads/2022/05/ansys-logo_brandlogos.net_snebi.png"
+                    src="https://images.seeklogo.com/logo-png/55/2/ansys-logo-png_seeklogo-551347.png"
                     alt="Ansys Logo"
                     className="h-12"
                   />

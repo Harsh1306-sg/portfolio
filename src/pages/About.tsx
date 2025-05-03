@@ -51,12 +51,14 @@ const About = () => {
             <div className="space-y-4 mb-8">
               <div className="p-4 border-l-2 border-ntu">
                 <p className="text-sm text-ntu font-medium">2024 - Present</p>
+
                 <h5 className="text-lg font-medium">
                   Master of Science in Mechanical Engineering
                 </h5>
                 <p className="text-dark-100/70">
                   Nanyang Technological University, Singapore
                 </p>
+                {/* <img src="/NTU-logo.PNG" alt="ntu-logo" className="size-10 inline-block" /> */}
               </div>
 
               <div className="p-4 border-l-2 border-light-300">
@@ -80,28 +82,30 @@ const About = () => {
               <div className="p-4 bg-light-200 rounded-lg">
                 <h5 className="font-medium">Robotics & Automation</h5>
                 <p className="text-sm text-dark-100/70 mt-1">
-                  Autonomous systems, robot design, and control systems
+                  Autonomous systems, Robot design, and Control systems
                 </p>
               </div>
 
               <div className="p-4 bg-light-200 rounded-lg">
-                <h5 className="font-medium">Military Designs</h5>
+                <h5 className="font-medium">Military Technology</h5>
                 <p className="text-sm text-dark-100/70 mt-1">
-                  BulletProof materials and Military Technical Designs
+                  Ballistics, Projectiles, and Military Tech
                 </p>
               </div>
 
               <div className="p-4 bg-light-200 rounded-lg">
                 <h5 className="font-medium">Sustainable Design</h5>
                 <p className="text-sm text-dark-100/70 mt-1">
-                  Eco-friendly materials and energy-efficient systems
+                  Materials Optimization, Energy Efficient Designs and
+                  Sustainable Manufacturing
                 </p>
               </div>
 
               <div className="p-4 bg-light-200 rounded-lg">
                 <h5 className="font-medium">Advanced Manufacturing</h5>
                 <p className="text-sm text-dark-100/70 mt-1">
-                  3D printing, smart manufacturing processes
+                  Additive Manufacturing, Smart Manufacturing processes and
+                  Material Informatics
                 </p>
               </div>
             </div>
@@ -185,14 +189,12 @@ const About = () => {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="font-medium">FEA & CFD Analysis</span>
-                    <span className="text-dark-100/70 text-sm">
-                      Intermediate
-                    </span>
+                    <span className="text-dark-100/70 text-sm">Advanced</span>
                   </div>
                   <div className="w-full bg-light-300 rounded-full h-2">
                     <div
                       className="bg-ntu h-2 rounded-full"
-                      style={{ width: "75%" }}
+                      style={{ width: "90%" }}
                     ></div>
                   </div>
                 </div>
@@ -207,7 +209,7 @@ const About = () => {
                   <div className="w-full bg-light-300 rounded-full h-2">
                     <div
                       className="bg-ntu h-2 rounded-full"
-                      style={{ width: "85%" }}
+                      style={{ width: "90%" }}
                     ></div>
                   </div>
                 </div>
@@ -230,14 +232,12 @@ const About = () => {
                     <span className="font-medium">
                       Technical Documentation (Microsoft Suite and LaTeX)
                     </span>
-                    <span className="text-dark-100/70 text-sm">
-                      Intermediate
-                    </span>
+                    <span className="text-dark-100/70 text-sm">Advanced</span>
                   </div>
                   <div className="w-full bg-light-300 rounded-full h-2">
                     <div
                       className="bg-ntu h-2 rounded-full"
-                      style={{ width: "70%" }}
+                      style={{ width: "90%" }}
                     ></div>
                   </div>
                 </div>
