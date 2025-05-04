@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import { projects } from "@/data/projects";
 import { cn } from "@/lib/utils";
+import LogoShowcase from "@/components/LogoShowcase";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -98,8 +99,19 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="flex flex-col gap-4 md:gap-6 justify-center items-center mt-20">
+        <h1 className="text-3xl md:text-4xl font-bold text-dark-100 m-0">
+          {" "}
+          My Engineering <span className="text-ntu">Software Suite</span>
+        </h1>
+        <p className="mt-2 text-dark-100/70">
+          Some tools and software that I am proficient at.
+        </p>
+        <LogoShowcase />
+      </section>
+
       {/* Skills Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-light-200">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center">
             <div className="w-full md:w-1/2 md:pr-10 mb-10 md:mb-0">

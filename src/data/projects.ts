@@ -1,6 +1,67 @@
 import { ProjectType } from "@/components/ProjectCard";
 import f1TenthGif from "../images/ftenth.gif";
 
+export const logoIconsList = [
+  {
+    imgPath: "/logos/fire_logo.png",
+  },
+  {
+    imgPath: "https://1000logos.net/wp-content/uploads/2021/04/MATLAB-logo.png",
+  },
+  {
+    imgPath:
+      "https://robotnik.eu/wp-content/uploads/2025/03/ROS-2_logo-2392x9999-1.webp",
+  },
+  {
+    imgPath:
+      "https://upload.wikimedia.org/wikipedia/commons/7/70/Docker_logo.png",
+  },
+  {
+    imgPath:
+      "https://1000logos.net/wp-content/uploads/2020/08/SolidWorks-Logo.png",
+  },
+  {
+    imgPath:
+      "https://upload.wikimedia.org/wikipedia/commons/7/78/Fusion360_Logo.png",
+  },
+  {
+    imgPath:
+      "https://upload.wikimedia.org/wikipedia/commons/e/e5/ANSYS_logo.png",
+  },
+  {
+    imgPath:
+      "https://www.okan.edu.tr/uploads/c_1920x760/slider/matlab-simulink/mlsl-12062018.jpg",
+  },
+  {
+    imgPath:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6e/AutoCad_new_logo.svg",
+  },
+  {
+    imgPath:
+      "https://rockwellautomation.scene7.com/is/image/rockwellautomation/FT-logo_Arena_FTblue_SubNav?wid=1280&fmt=png-alpha",
+  },
+  {
+    imgPath:
+      "https://cdn.prod.website-files.com/66e9195e34f86072dbff4dbb/66f2a80a45a4d10de39aca18_Shapr3D_Logo_RGB_Blue.png",
+  },
+  {
+    imgPath: "https://www.cdnlogo.com/logos/s/89/sketchup-2020.svg",
+  },
+];
+
+// python
+// matlab
+// ros 2
+// docker
+// solidworks
+// fusion 360
+// ansys
+// simulink
+// autocad
+// rockwell arena
+// shapr 3D
+// Sketchup
+
 export const projects: ProjectType[] = [
   {
     id: "bullet-proof",
