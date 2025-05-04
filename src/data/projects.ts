@@ -3,7 +3,7 @@ import f1TenthGif from "../images/ftenth.gif";
 
 export const logoIconsList = [
   {
-    imgPath: "/logos/fire_logo.png",
+    imgPath: "/logos/python_logo.png",
   },
   {
     imgPath: "https://1000logos.net/wp-content/uploads/2021/04/MATLAB-logo.png",
