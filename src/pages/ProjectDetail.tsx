@@ -128,6 +128,7 @@ const ProjectDetail = () => {
               <li>{project.keyFeatures[1]}</li>
               <li>{project.keyFeatures[2]}</li>
               <li>{project.keyFeatures[3]}</li>
+              <li>{project.keyFeatures[4]}</li>
             </ul>
 
             <h3 className="text-xl font-bold text-dark-100 mt-10 mb-4">

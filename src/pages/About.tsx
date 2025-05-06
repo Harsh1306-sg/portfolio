@@ -8,7 +8,7 @@ const About = () => {
       <div className="container mx-auto">
         <SectionHeader
           title="About Me"
-          subtitle="Mechanical engineering graduate student with a passion for innovative design and sustainable solutions."
+          subtitle="Result-Driven Mechanical Design Engineer with a First Class Honours and ongoing MSc student at NTU Singapore, blending advanced CAD and FEA skills with a passion for building smart, functional, and sustainable products. From drones to bulletproof vests, my designs are guided by purpose, engineered for precision, and built to deliver real-world value."
         />
 
         <div className="flex flex-col lg:flex-row gap-12 mt-12">
@@ -202,14 +202,16 @@ const About = () => {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="font-medium">
-                      MATLAB/Python/ROS 2/Docker
+                      Programming in Matlab, Python, ROS2
                     </span>
-                    <span className="text-dark-100/70 text-sm">Advanced</span>
+                    <span className="text-dark-100/70 text-sm">
+                      Intermediate
+                    </span>
                   </div>
                   <div className="w-full bg-light-300 rounded-full h-2">
                     <div
                       className="bg-ntu h-2 rounded-full"
-                      style={{ width: "90%" }}
+                      style={{ width: "55%" }}
                     ></div>
                   </div>
                 </div>
@@ -238,6 +240,81 @@ const About = () => {
                     <div
                       className="bg-ntu h-2 rounded-full"
                       style={{ width: "90%" }}
+                    ></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium">Project Collaboration</span>
+                    <span className="text-dark-100/70 text-sm">Advanced</span>
+                  </div>
+                  <div className="w-full bg-light-300 rounded-full h-2">
+                    <div
+                      className="bg-ntu h-2 rounded-full"
+                      style={{ width: "90%" }}
+                    ></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium">
+                      Design for Manufacturing (DFM) / Design for Assembly (DFA)
+                    </span>
+                    <span className="text-dark-100/70 text-sm">Advanced</span>
+                  </div>
+                  <div className="w-full bg-light-300 rounded-full h-2">
+                    <div
+                      className="bg-ntu h-2 rounded-full"
+                      style={{ width: "90%" }}
+                    ></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium">PLM & PDM Tools</span>
+                    <span className="text-dark-100/70 text-sm">Beginner</span>
+                  </div>
+                  <div className="w-full bg-light-300 rounded-full h-2">
+                    <div
+                      className="bg-ntu h-2 rounded-full"
+                      style={{ width: "30%" }}
+                    ></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium">
+                      Geometric Dimensioning and Tolerance (GD&T)
+                    </span>
+                    <span className="text-dark-100/70 text-sm">
+                      Intermediate
+                    </span>
+                  </div>
+                  <div className="w-full bg-light-300 rounded-full h-2">
+                    <div
+                      className="bg-ntu h-2 rounded-full"
+                      style={{ width: "55%" }}
+                    ></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium">
+                      Intellectual Property & Patent Literacy
+                    </span>
+                    <span className="text-dark-100/70 text-sm">
+                      Intermediate
+                    </span>
+                  </div>
+                  <div className="w-full bg-light-300 rounded-full h-2">
+                    <div
+                      className="bg-ntu h-2 rounded-full"
+                      style={{ width: "55%" }}
                     ></div>
                   </div>
                 </div>

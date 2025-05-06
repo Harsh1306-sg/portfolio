@@ -76,17 +76,18 @@ export const projects: ProjectType[] = [
     duration: 8,
     teamSize: 1,
     para1:
-      "Through rigorous Finite Element Analysis (FEA), I evaluated various materials to determine optimal impact resistance and structural integrity properties for body armor applications. This analytical approach provided crucial data that informed subsequent design decisions and material selections, ensuring performance requirements would be met under real-world conditions.",
+      "This project aimed to rethink conventional bulletproof vests by introducing a modular, lightweight, and sustainable body armour system. Using advanced Finite Element Analysis (FEA), the design focused on enhancing impact resistance while maintaining structural integrity across critical zones of the body. The final outcome was a novel modular vest system that reduces material waste, improves repairability, and ensures full coverage of vital organs. Combining carbon steel and Kevlar in a unique composite layering structure, the armour achieved a weight reduction of approximately 20% compared to traditional vests, while maintaining ballistic resistance at the NIJ Level III-A standard.",
     para2:
       "The project culminated in a modular vest design that significantly improved upon existing solutions, enhancing bullet resistance while simultaneously reducing overall weight by 20%. The innovative modular approach improved field repairability and sustainability by minimizing material waste, while the comprehensive design ensured complete coverage of all vital organs. Throughout development, I produced detailed sketches and precise CAD models that maintained design integrity and facilitated efficient manufacturing processes.",
     keyFeatures: [
-      "Modular design for enhanced repairability and field maintenance",
-      "20% weight reduction while maintaining ballistic protection",
-      "Optimized coverage of vital organs with ergonomic considerations",
-      "Sustainable material selection with reduced environmental impact",
+      "Modular Armour System with Lightweight Composites: Designed interchangeable plates using hybrid layering of 2mm carbon steel and 6mm Kevlar, reducing overall weight while preserving high impact resistance and improving field serviceability.",
+      "Comprehensive Vital Protection: CAD-driven geometry ensured full protection for head, neck, and torso regions, tailored to anthropometric landmarks with detailed component-level drawings to ensure precise assembly.",
+      "Engineering Validation Through Simulation: Conducted extensive FEA simulations using ANSYS to test bullet impact (e.g., 7.62 NATO rounds at 500 m/s), guiding iterative design refinements and validating protection capabilities.",
+      "Sustainable Engineering Approach: Focused on recyclability of components and responsible material usage in compliance with modern environmental standards, reducing long-term waste.",
+      "Advanced Digital Design Implementation: Created detailed 3D models and technical drawings leveraging CAD software to ensure manufacturability, precise assembly tolerances, and efficient production processes.",
     ],
     technicalChallenges:
-      "A significant challenge was balancing enhanced ballistic protection with weight reduction goals. This required extensive material research and innovative structural designs to maintain protection standards while reducing overall mass by 20%. Additionally, creating a truly modular system presented design complexities around connection points and interchangeable panels. Multiple prototypes and stress tests were needed to ensure structural integrity at module interfaces while maintaining ballistic performance across the entire vest assembly.",
+      "The primary technical challenges involved optimising the vest’s structure to balance protection and weight, especially after early hollow plate designs failed under ballistic impact. FEA simulations required precise material modelling and boundary conditions to accurately capture high-velocity bullet behaviour. Integrating carbon steel and Kevlar introduced challenges in material compatibility and energy absorption, while ensuring modular plates maintained structural integrity without creating weak points. Additionally, achieving full vital organ coverage without compromising mobility demanded careful ergonomic consideration.",
   },
   {
     id: "drone-development",
@@ -101,17 +102,18 @@ export const projects: ProjectType[] = [
     duration: 3,
     teamSize: 5,
     para1:
-      'As a member of the NTU REXUS Drone Department, I played a key role in designing and developing an advanced 11" RC Quadrotor in X-Configuration with a 10kg Maximum Take-Off Weight (MTOW). The project focused on creating a high-performance drone platform capable of autonomous operations through integration of the Pixhawk 6X flight controller and GNSS-based navigation systems, providing reliable positioning and flight capabilities even in challenging environments.',
+      'As a member of the NTU REXUS Drone Department, I played a central role in the design and development of an advanced 11" RC Quad-rotor in X-Configuration, built to support a 10kg Maximum Take-Off Weight (MTOW). The project aimed to create a robust, competition-ready drone platform for autonomous operation, leveraging the Pixhawk 6X flight controller and a GNSS-based navigation system for reliable positioning and precise control in complex environments.',
     para2:
-      "My primary contributions involved generating multiple drone frame concepts using sophisticated CAD tools, followed by rigorous structural integrity optimization through Finite Element Analysis (FEA) simulations. These engineering processes ensured the final design balanced strength, weight, and functionality requirements. Additionally, I assisted the team in optimizing overall drone performance specifically for the University Rover Challenge, fine-tuning flight characteristics and control systems to achieve superior stability and responsiveness during competition scenarios.",
+      "My contributions focused on designing multiple drone frame configurations using professional CAD tools such as SolidWorks and Fusion 360, exploring variations in arm geometry, motor positioning, and structural reinforcements to optimise aerodynamics and load distribution. Each design iteration was subjected to detailed Finite Element Analysis (FEA) simulations to assess stress distribution, deformation under load, and overall structural stability. Through this iterative process, I fine-tuned the frames to reduce weight without compromising strength, ensuring that the final design satisfied strict performance requirements related to payload capacity, flight endurance, and mechanical resilience during high maneuverability operations.",
     keyFeatures: [
-      '11" RC Quadrotor with X-Configuration and 10kg MTOW capability',
-      "Integration of Pixhawk 6X flight controller for advanced flight control",
-      "GNSS-based navigation system for precise autonomous positioning",
-      "Optimized structural integrity through iterative FEA simulations",
+      '11" RC Quad-rotor with X-Configuration and 10kg MTOW capability',
+      "Integration of Pixhawk 6X flight controller for autonomous flight control",
+      "GNSS-based navigation system enabling precise positioning in real-time",
+      "Structural integrity optimised through advanced FEA simulations",
+      "Custom frame design iterations to balance strength, weight, and aerodynamics",
     ],
     technicalChallenges:
-      "The primary technical challenge involved optimizing the drone's structural design to support the 10kg MTOW while maintaining maneuverability and flight stability. Multiple frame iterations were required to achieve the optimal strength-to-weight ratio, with FEA simulations revealing stress concentrations that needed targeted reinforcement. Another significant challenge was integrating the Pixhawk 6X with custom flight parameters and GNSS navigation to ensure reliable autonomous operation. This required extensive calibration and field testing to account for sensor fusion accuracy and environmental interference factors.",
+      "Designing the drone involved several complex engineering challenges. One of the primary difficulties was achieving a lightweight yet structurally robust frame capable of supporting a 10kg MTOW without compromising flight stability or agility. This required careful material selection, efficient load path design, and extensive FEA-based structural optimisation to prevent stress concentrations and mechanical failure under dynamic conditions.",
   },
   {
     id: "f1tenth-hackathon",
@@ -119,23 +121,37 @@ export const projects: ProjectType[] = [
     description:
       "Developed an award-winning autonomous racing algorithm utilizing wall-tracing techniques for precise navigation and obstacle avoidance, implemented within the ROS 2 framework for real-time control and sensor integration.",
     image: f1TenthGif,
-    category: ["Robotics", "Programming", "Autonomous Systems"],
-    tools: ["ROS 2", "Python", "Wall-tracing Algorithm", "Sensor Integration"],
+    category: [
+      "autonomous",
+      "robotics",
+      "real-time systems",
+      "algorithm development",
+      "programming",
+    ],
+    tools: [
+      "ROS 2",
+      "Python",
+      " Lidar-based Wall-following",
+      "Pid Control",
+      "Docker",
+      "Sensor Fusion",
+    ],
     featured: true,
     duration: 2,
     teamSize: 12,
     para1:
-      "In the highly competitive F1Tenth Virtual Hackathon, I developed a sophisticated autonomous racing algorithm centered around wall-tracing principles for precise navigation and effective obstacle avoidance. This approach allowed our virtual vehicle to maintain optimal racing lines while adapting to the dynamic course conditions in real-time. The algorithm balanced aggressive performance with necessary safety parameters, continuously calculating optimal distances from track boundaries based on incoming sensor data.",
+      "In the highly competitive F1TENTH Virtual Hackathon, I engineered a refined autonomous racing algorithm grounded in wall-tracing principles, enabling precise path navigation and efficient obstacle handling. This strategy allowed the virtual car to dynamically maintain optimal proximity to track boundaries, adapting swiftly to real-time environmental changes. By carefully balancing aggressive speed with stability, the system consistently calculated ideal steering angles and distances using live LiDAR data input.",
     para2:
-      "Implementation was accomplished using ROS 2 (Robot Operating System), leveraging its robust modular framework to create efficient communication between sensing, processing, and control modules. This architecture enabled seamless real-time control and sensor data integration, crucial for split-second decision making in racing scenarios. Our solution's effectiveness was validated by securing 3rd place in the competition, achieved through methodical optimization of lap times while ensuring consistent stability across varying track conditions and racing situations.",
+      "The solution was built on ROS 2 (Robot Operating System), utilising its modular node-based structure to ensure fast, reliable communication between sensing, control, and processing units. This architecture supported real-time decision-making, which was critical for maintaining performance under time-sensitive racing conditions. The final algorithm delivered a strong balance between speed and control, earning third place in the competition by minimising lap times without compromising on consistency or safety. ",
     keyFeatures: [
-      "Wall-tracing algorithm for precision navigation and obstacle avoidance",
-      "ROS 2 implementation for modular sensing and control architecture",
-      "Real-time sensor data processing for dynamic racing decisions",
-      "Optimized performance balancing speed and stability for consistent lap times",
+      "Wall-Following Algorithm: Utilises LiDAR data to detect walls and maintain a set distance, ensuring the vehicle navigates curves and straight paths effectively.",
+      "PID Control Mechanism: Implements a Proportional-Integral-Derivative controller to adjust the steering angle based on the error between the desired and actual distances from the wall.",
+      "Dynamic Speed Adjustment: Modulates the vehicle's speed in response to the proximity of obstacles, enhancing safety and performance.",
+      "Modular ROS 2 Nodes: The system is structured into distinct nodes for laser scan processing, error computation, PID control, and speed regulation, promoting scalability and maintainability.",
+      "Mathematical Modelling: Incorporates precise mathematical formulations to calculate angles of deviation and distances, ensuring accurate control decisions.",
     ],
     technicalChallenges:
-      "A major challenge was developing a racing algorithm that could make split-second decisions based on imperfect sensor data. This required sophisticated filtering and prediction algorithms to account for sensor noise and latency while maintaining racing speed. Another significant obstacle was optimizing the balance between aggressive racing lines and safety margins. Too conservative an approach would result in slower lap times, while too aggressive a strategy led to crashes. Extensive simulations across various track conditions were necessary to find the optimal balance that ultimately secured our 3rd place finish.",
+      "A key challenge was developing a racing algorithm tailored to a specific track, capable of making split-second decisions using imperfect sensor data. This involved implementing advanced filtering and prediction methods to handle sensor noise and latency, all while preserving competitive speed. Another major hurdle was fine-tuning the trade-off between aggressive racing lines and safe manoeuvring. An overly conservative strategy resulted in slower lap times, while being too aggressive increased the likelihood of crashes. Through rigorous simulations focused on this particular track, we achieved an optimal balance—contributing to our 3rd place finish.",
   },
   {
     id: "ergonomic-mouse",
