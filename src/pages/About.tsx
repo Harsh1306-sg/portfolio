@@ -16,7 +16,7 @@ const About = () => {
           <ScrollAnimation className="lg:w-1/3 relative">
             <div className="aspect-square overflow-hidden rounded-2xl bg-light-200">
               <img
-                src="https://images.unsplash.com/photo-1580894742597-87bc8789db3d?q=80&w=1470&auto=format&fit=crop"
+                src="/my-pic.jpg"
                 alt="Mechanical Engineer Portrait"
                 className="w-full h-full object-cover"
               />

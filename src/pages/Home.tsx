@@ -63,7 +63,7 @@ const Home = () => {
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-light-200">
                   <img
-                    src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1470&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1696258686454-60082b2c33e2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Mechanical Engineer working on a project"
                     className="w-full h-full object-cover"
                   />
@@ -160,8 +160,14 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="w-full md:w-1/2">
-              <div className="grid grid-cols-2 gap-6">
+            <div className=" relative w-full md:w-1/2">
+              <img
+                src="https://images.unsplash.com/photo-1720879996903-24859d1df48f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="desk"
+                className="rounded-xl hover:brightness-110 hover:scale-90 transition-transform duration-300"
+              />
+
+              {/* <div className="grid grid-cols-2 gap-6">
                 <div className="rounded-lg bg-light-300 p-5 flex flex-col items-center justify-center hover:shadow-md transition-shadow h-40">
                   <img
                     src="https://www.pugetsystems.com/wp-content/uploads/2022/08/SOLIDWORKS-Logo.png"
@@ -194,7 +200,7 @@ const Home = () => {
                   />
                   <p className="mt-4 font-medium text-center">Ansys</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
