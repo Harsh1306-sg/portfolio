@@ -6,10 +6,7 @@ const About = () => {
   return (
     <div className="pt-24 md:pt-32 pb-20 px-6">
       <div className="container mx-auto">
-        <SectionHeader
-          title="About Me"
-          subtitle="Result-Driven Mechanical Design Engineer with a First Class Honours and ongoing MSc student at NTU Singapore, blending advanced CAD and FEA skills with a passion for building smart, functional, and sustainable products. From drones to bulletproof vests, my designs are guided by purpose, engineered for precision, and built to deliver real-world value."
-        />
+        <SectionHeader title="About Me" subtitle="" />
 
         <div className="flex flex-col lg:flex-row gap-12 mt-12">
           {/* Profile Image */}
@@ -31,17 +28,25 @@ const About = () => {
             </h3>
 
             <p className="text-dark-100/80 mb-4">
-              I'm a Master's student specializing in mechanical engineering with
-              a focus on robotics, thermal systems, and sustainable design. My
-              academic journey has equipped me with a strong foundation in
-              engineering principles and innovative problem-solving approaches.
+              I’m a Master’s student in Mechanical Engineering at NTU Singapore,
+              specialising in robotics, thermal systems, and sustainable design.
+              My academic journey has been grounded in engineering fundamentals,
+              but shaped by hands-on innovation across areas such as autonomous
+              robotics, material optimisation, and advanced simulation. My core
+              research interests lie at the intersection of Robotics &
+              Automation, Military Technology, Sustainable Design, and Advanced
+              Manufacturing.
             </p>
 
             <p className="text-dark-100/80 mb-6">
-              Throughout my studies, I've developed expertise in CAD design,
-              thermal analysis, and robotic systems. I'm passionate about
-              creating solutions that combine technical excellence with
-              environmental sustainability.
+              I’m particularly drawn to solving real-world problems through
+              intelligent system design whether it’s optimising ballistic
+              protection systems, developing control architectures for
+              autonomous platforms, or improving energy efficiency in
+              manufacturing workflows. With growing experience in CAD modeling,
+              FEA simulations, and autonomous/robotics integration, I aim to
+              create solutions that blend technical precision with environmental
+              responsibility engineering with purpose and impact.
             </p>
 
             <h4 className="text-xl font-semibold text-dark-100 mb-3 mt-8">
@@ -112,9 +117,10 @@ const About = () => {
 
             <div className="flex gap-4 mt-8">
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1fQQwv3z2gMRyt8L1ObosawdkA4IY-Qvl/view?usp=sharing"
                 download
                 className="inline-flex items-center justify-center"
+                target="_blank"
               >
                 <Button>
                   <svg

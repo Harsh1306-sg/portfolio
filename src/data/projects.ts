@@ -68,8 +68,7 @@ export const projects: ProjectType[] = [
     title: "Bullet-Proof Vest Innovation",
     description:
       "Designed modular vest that enhanced bullet resistance, repairability, and sustainability while reducing material waste and overall weight by 20%, improving maintenance efficiency and ensuring full coverage of all vital organs.",
-    image:
-      "https://images.unsplash.com/photo-1638104977265-8e8ea24aa2aa?q=80&w=3087&fit=crop",
+    image: "/bullet.jpeg",
     category: ["Materials", "Design", "Simulation", "Ergonomics"],
     tools: ["SolidWorks", "CAD", "FEA"],
     featured: true,

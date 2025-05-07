@@ -34,11 +34,12 @@ const Home = () => {
               </h1>
 
               <p className="mt-6 text-xl text-dark-100/70">
-                Mechanical-Design Engineer and student at NTU Singapore with
-                expertise in CAD Design, FEA Simulations, Robotics, Automation,
-                and Autonomous systems. Skilled in Python, MATLAB, ROS 2, and
-                multiple CAD software’s, with experience from aerospace to
-                material engineering.
+                Result-Driven Mechanical Design Engineer with a First Class
+                Honours and ongoing MSc student at NTU Singapore, blending
+                advanced CAD and FEA skills with a passion for building smart,
+                functional, and sustainable products. From drones to bulletproof
+                vests, my designs are guided by purpose, engineered for
+                precision, and built to deliver real-world value.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -63,9 +64,9 @@ const Home = () => {
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-light-200">
                   <img
-                    src="https://images.unsplash.com/photo-1696258686454-60082b2c33e2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://i.pinimg.com/736x/2e/a8/e1/2ea8e199982a9e06380c82891775eab5.jpg"
                     alt="Mechanical Engineer working on a project"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 hidden md:block w-40 h-40 bg-ntu rounded-tr-3xl z-[-1]"></div>
