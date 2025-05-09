@@ -98,8 +98,8 @@ export const projects: ProjectType[] = [
     category: ["Aerospace", "Robotics", "Design"],
     tools: ["CAD", "FEA", "Pixhawk 6X", "GNSS Navigation"],
     featured: true,
-    duration: 3,
-    teamSize: 5,
+    duration: 4,
+    teamSize: 3,
     para1:
       'As a member of the NTU REXUS Drone Department, I played a central role in the design and development of an advanced 11" RC Quad-rotor in X-Configuration, built to support a 10kg Maximum Take-Off Weight (MTOW). The project aimed to create a robust, competition-ready drone platform for autonomous operation, leveraging the Pixhawk 6X flight controller and a GNSS-based navigation system for reliable positioning and precise control in complex environments.',
     para2:
