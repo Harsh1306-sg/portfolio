@@ -137,7 +137,7 @@ export const projects: ProjectType[] = [
     ],
     featured: true,
     duration: 2,
-    teamSize: 12,
+    teamSize: 1,
     para1:
       "In the highly competitive F1TENTH Virtual Hackathon, I engineered a refined autonomous racing algorithm grounded in wall-tracing principles, enabling precise path navigation and efficient obstacle handling. This strategy allowed the virtual car to dynamically maintain optimal proximity to track boundaries, adapting swiftly to real-time environmental changes. By carefully balancing aggressive speed with stability, the system consistently calculated ideal steering angles and distances using live LiDAR data input.",
     para2:
