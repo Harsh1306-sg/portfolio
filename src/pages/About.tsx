@@ -117,7 +117,7 @@ const About = () => {
 
             <div className="flex gap-4 mt-8">
               <a
-                href="https://drive.google.com/file/d/1fQQwv3z2gMRyt8L1ObosawdkA4IY-Qvl/view?usp=sharing"
+                href="https://drive.google.com/file/d/1hJYXfTrJfcb4GH6Tv7-oSEQGTSui_ZVT/view?usp=sharing"
                 download
                 className="inline-flex items-center justify-center"
                 target="_blank"
@@ -143,7 +143,7 @@ const About = () => {
                 </Button>
               </a>
               <a
-                href="https://drive.google.com/file/d/1fQQwv3z2gMRyt8L1ObosawdkA4IY-Qvl/view?usp=sharing"
+                href="https://drive.google.com/file/d/1I1r_ONl1Q-I65ETK7N3KXxTHGQn9BMiK/view?usp=sharing"
                 download
                 className="inline-flex items-center justify-center"
                 target="_blank"
