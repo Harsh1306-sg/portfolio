@@ -16,6 +16,8 @@ export type ProjectType = {
   keyFeatures: string[];
   technicalChallenges: string;
   documentation?: boolean;
+  github?: boolean;
+  
 };
 
 interface ProjectCardProps {
