@@ -87,6 +87,7 @@ export const projects: ProjectType[] = [
     ],
     technicalChallenges:
       "The primary technical challenges involved optimising the vest’s structure to balance protection and weight, especially after early hollow plate designs failed under ballistic impact. FEA simulations required precise material modelling and boundary conditions to accurately capture high-velocity bullet behaviour. Integrating carbon steel and Kevlar introduced challenges in material compatibility and energy absorption, while ensuring modular plates maintained structural integrity without creating weak points. Additionally, achieving full vital organ coverage without compromising mobility demanded careful ergonomic consideration.",
+  documentation: false,
   },
   {
     id: "drone-development",
@@ -113,6 +114,7 @@ export const projects: ProjectType[] = [
     ],
     technicalChallenges:
       "Designing the drone involved several complex engineering challenges. One of the primary difficulties was achieving a lightweight yet structurally robust frame capable of supporting a 10kg MTOW without compromising flight stability or agility. This required careful material selection, efficient load path design, and extensive FEA-based structural optimisation to prevent stress concentrations and mechanical failure under dynamic conditions.",
+  documentation: false,
   },
   {
     id: "f1tenth-hackathon",
@@ -151,6 +153,7 @@ export const projects: ProjectType[] = [
     ],
     technicalChallenges:
       "A key challenge was developing a racing algorithm tailored to a specific track, capable of making split-second decisions using imperfect sensor data. This involved implementing advanced filtering and prediction methods to handle sensor noise and latency, all while preserving competitive speed. Another major hurdle was fine-tuning the trade-off between aggressive racing lines and safe manoeuvring. An overly conservative strategy resulted in slower lap times, while being too aggressive increased the likelihood of crashes. Through rigorous simulations focused on this particular track, we achieved an optimal balance—contributing to our 3rd place finish.",
+  documentation: false,
   },
   {
     id: "ergonomic-mouse",
@@ -176,6 +179,7 @@ export const projects: ProjectType[] = [
     ],
     technicalChallenges:
       "A key challenge in this project was designing a mouse that would accommodate various hand sizes and grip styles while still providing optimal ergonomic benefits. This required multiple prototyping iterations and extensive user testing to find the ideal compromise. Another technical hurdle involved balancing the ergonomic improvements with manufacturing feasibility and cost constraints. Creating the complex contoured surfaces demanded innovative approaches to both the design and the potential manufacturing processes to ensure the product could be produced at a reasonable price point.",
+  documentation: true,
   },
 ];
 
