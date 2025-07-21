@@ -15,6 +15,7 @@ export type ProjectType = {
   teamSize: number;
   keyFeatures: string[];
   technicalChallenges: string;
+  documentation?: boolean;
 };
 
 interface ProjectCardProps {
