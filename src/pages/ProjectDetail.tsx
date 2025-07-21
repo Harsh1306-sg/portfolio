@@ -177,6 +177,7 @@ const ProjectDetail = () => {
                 </div>
 
                 <div className="mt-8">
+                  { project.documentation && (
                   <Button className="w-full">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -194,6 +195,7 @@ const ProjectDetail = () => {
                     </svg>
                     View Documentation
                   </Button>
+                    )}
                 </div>
               </div>
             </div>
