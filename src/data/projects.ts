@@ -154,6 +154,7 @@ export const projects: ProjectType[] = [
     technicalChallenges:
       "A key challenge was developing a racing algorithm tailored to a specific track, capable of making split-second decisions using imperfect sensor data. This involved implementing advanced filtering and prediction methods to handle sensor noise and latency, all while preserving competitive speed. Another major hurdle was fine-tuning the trade-off between aggressive racing lines and safe manoeuvring. An overly conservative strategy resulted in slower lap times, while being too aggressive increased the likelihood of crashes. Through rigorous simulations focused on this particular track, we achieved an optimal balance—contributing to our 3rd place finish.",
   documentation: false,
+    github: true,
   },
   {
     id: "ergonomic-mouse",
