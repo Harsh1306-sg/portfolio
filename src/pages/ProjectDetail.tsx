@@ -178,6 +178,7 @@ const ProjectDetail = () => {
 
                 <div className="mt-8">
                   { project.documentation && (
+      <a href="https://drive.google.com/file/d/1p6HNEc7VAANmBqV_iCzWojMaCOV_PAQC/view?usp=sharing" >
                   <Button className="w-full">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -195,6 +196,7 @@ const ProjectDetail = () => {
                     </svg>
                     View Documentation
                   </Button>
+        </a>
                     )}
                 </div>
               </div>
